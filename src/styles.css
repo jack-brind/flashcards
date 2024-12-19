@@ -323,10 +323,11 @@ html {
 }
 
 body button {
-  font-family: Inter;
+  font-family: Inter, Arial;
 }
 
 h1 {
+  font-family: 'Inter Display', Arial;
   font-size: 28px;
   font-weight: 500;
   color: var(--color-zinc-800);
