@@ -28,6 +28,22 @@
   src: url('../assets/fonts/MonaspaceNeonVarVF.woff2') format('woff2');
 }
 
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+}
+
 :root {
   --color-red-50: oklch(0.971 0.013 17.38);
   --color-red-100: oklch(0.936 0.032 17.717);
@@ -338,8 +354,8 @@ p {
 
 .card {
   background: rgb(255, 255, 255, 0.5);
-  padding: 24px;
-  border-radius: 8px;
+  padding: 24px 40px;
+  border-radius: 12px;
   margin: 0px auto;
   height: fit-content;
 }
@@ -355,7 +371,6 @@ p {
   background: rgb(255, 255, 255, 0.3);
   border: 1.5px solid rgb(255, 255, 255, 0.4);
   border-radius: 8px;
-  transition: 0.3s;
   padding: 0px 16px;
   box-shadow:
     lch(0 0 0 / 0.02) 0px 4px 4px -1px,
@@ -364,7 +379,11 @@ p {
 
 .button-default:hover {
   background: rgb(255, 255, 255, 0.5);
-  transition: 0.3s;
+}
+
+.button-default:active {
+  outline: 1.5px solid rgb(0, 0, 0, 0.1);
+  border: 0px solid white;
 }
 
 .button-default:hover > .btn-icon {
@@ -412,20 +431,4 @@ img {
 
 #highlight-text {
   color: var(--color-zinc-800);
-}
-
-@keyframes bounce2 {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-5px);
-  }
-  60% {
-    transform: translateX(-2px);
-  }
 }
