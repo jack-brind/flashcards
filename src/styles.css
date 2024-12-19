@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'Inter';
   font-weight: 100 900; /* For variable font, keep the range */
-  src: url('../assets/fonts/InterVariable.woff2') format('woff2');
+  src: url('/fonts/InterVariable.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter Display';
   font-weight: 400;
-  src: url('../assets/fonts/InterDisplay-Regular.woff2') format('woff2');
+  src: url('/fonts/InterDisplay-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter Display';
   font-weight: 500;
-  src: url('../assets/fonts/InterDisplay-Medium.woff2') format('woff2');
+  src: url('/fonts/InterDisplay-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter Display';
   font-weight: 600;
-  src: url('../assets/fonts/InterDisplay-SemiBold.woff2') format('woff2');
+  src: url('/fonts/InterDisplay-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Monaspace';
   font-weight: 200 800; /* For variable font, keep the range */
-  src: url('../assets/fonts/MonaspaceNeonVarVF.woff2') format('woff2');
+  src: url('/fonts/MonaspaceNeonVarVF.woff2') format('woff2');
 }
 
 @keyframes bounce2 {
