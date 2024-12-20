@@ -41,4 +41,55 @@ export const javascriptTips = [
     snippet: '/snippets/docbyid.png',
     highlight: 'This is some random highlight',
   },
+  {
+    title: 'Higher order functions',
+    summary:
+      'Higher order functions accept other functions as arguments (callback functions). They delegate the smaller tasks to the lower level callback functions. This is important for async functions that call a function to do something and wait for that callback function to return something.',
+    snippet: '/snippets/docbyid.png',
+    highlight: 'Higher order functions are like CEOs that have an assistant',
+  },
+  {
+    title: 'Abstraction',
+    summary:
+      'Abstraction is about hiding the complexity of a system and exposing only the essential parts that you need to work with. It allows you to focus on what a program does rather than how it does it.',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
+  {
+    title: 'textContent',
+    summary: 'When manipulating some text in the DOM, use element.textContent',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
+  {
+    title: 'Modulus operator',
+    summary:
+      'The modulus (%) will return anything left over from a division. So for 10 % 3, this works out what is left over when 10 is divided by 3.',
+    snippet: '/snippets/modulus.png',
+  },
+  {
+    title: '=, ==, ===',
+    summary: 'When manipulating some text in the DOM, use element.textContent',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
+  {
+    title: 'Array methods',
+    summary: 'When manipulating some text in the DOM, use element.textContent',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
+  {
+    title: 'String methods',
+    summary: 'When manipulating some text in the DOM, use element.textContent',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
+  {
+    title: 'Truthy & Falsy values',
+    summary:
+      'These are values that JavaScript will interpret with defaults. Values are truthy if they return a ???. If the value returned is ',
+    snippet: '/snippets/docbyid.png',
+    highlight: "You don't need to how a car's engine works to drive it",
+  },
 ];
