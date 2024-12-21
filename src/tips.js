@@ -21,7 +21,7 @@ export const javascriptTips = [
     title: 'OR (||) operator',
     summary:
       'The OR (||) operator evaluates expressions from left to right and returns the first “truthy” value it encounters. If all values are “falsy” (e.g., false, 0, "", null, undefined, or NaN), it returns the last value',
-    snippet: '/snippets/or.png',
+    snippet: '/snippets/or dark.png',
   },
   {
     title: 'Parameters',
