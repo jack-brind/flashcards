@@ -12,53 +12,54 @@
     <link rel="icon" type="image/x-icon" href="/flash-card.png" />
   </head>
   <body>
-    <div class="main">
-      <div class="card">
-        <h1 id="title"></h1>
-        <p id="summary"></p>
-        <image id="snippet" />
-        <div id="highlight">
-          <span class="highlight-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-chevrons-right"
-            >
-              <polyline points="13 17 18 12 13 7"></polyline>
-              <polyline points="6 17 11 12 6 7"></polyline>
-            </svg>
-          </span>
-          <p id="highlight-text"></p>
-        </div>
+    <div class="content">
+      <h1 id="title"></h1>
+      <p id="summary"></p>
+      <image id="snippet" />
+      <div id="highlight">
+        <span class="highlight-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-chevrons-right"
+          >
+            <polyline points="13 17 18 12 13 7"></polyline>
+            <polyline points="6 17 11 12 6 7"></polyline>
+          </svg>
+        </span>
+        <p id="highlight-text"></p>
       </div>
     </div>
-    <button id="refresh" class="button-default">
-      <div class="btn-label">Next tip</div>
-      <span class="btn-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#3f3f47"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-arrow-right"
-        >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </span>
-    </button>
+
+    <div class="button-container">
+      <button id="refresh" class="button-default">
+        <div class="btn-label">Next tip</div>
+        <span class="btn-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#3f3f47"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-right"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </button>
+    </div>
   </body>
   <script type="module" src="./src/script.js"></script>
 </html>

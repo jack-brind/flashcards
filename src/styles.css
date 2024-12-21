@@ -44,6 +44,12 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-red-50: oklch(0.971 0.013 17.38);
   --color-red-100: oklch(0.936 0.032 17.717);
@@ -313,30 +319,33 @@
   --color-white: #fff;
 }
 
-html {
-  height: 80vh;
-  background: #e7e3e4;
-  scroll-behavior: smooth;
+body {
+  font-family: -apple-system, Arial;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-body button {
-  font-family: Inter, Arial;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100vw;
+.content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 24px;
+  margin-bottom: 80px;
 }
 
 h1 {
-  font-family: 'Inter Display', Arial;
-  font-size: 28px;
+  font-family: -apple-system, Arial;
+  font-size: 32px;
   font-weight: 500;
   color: var(--color-zinc-800);
+  margin: 12px 0px 24px 0px;
 }
 
 p {
-  font-family: 'Inter', Arial;
-  font-size: 15px;
+  font-family: -apple-system, Arial;
+  font-size: 16px;
   color: var(--color-zinc-800);
 }
 
@@ -345,19 +354,21 @@ p {
   margin-bottom: 24px;
 }
 
-.main {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+img {
+  background: white;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 4px;
+  border-radius: 8px;
+  max-width: 100%;
+  box-shadow: lch(0 0 0 / 0.02) 0px 4px 4px -1px;
 }
 
-.card {
-  background: rgb(255, 255, 255, 0.5);
-  padding: 8px 24px 40px 24px;
-  border-radius: 12px;
-  margin: 0px auto;
-  height: 100vh;
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .button-default {
@@ -403,15 +414,6 @@ p {
   font-size: 15px;
   letter-spacing: 0.1px;
   font-weight: 450;
-}
-
-img {
-  background: rgb(255, 255, 255, 0.3);
-  border: 1px solid rgb(0, 0, 0, 0.1);
-  padding: 4px 12px;
-  border-radius: 8px;
-  max-width: 80vw;
-  box-shadow: lch(0 0 0 / 0.02) 0px 4px 4px -1px;
 }
 
 #highlight {

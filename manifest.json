@@ -4,8 +4,8 @@
   "short_name": "Flashcards.js",
   "description": "Randomly generated JavaScript flashcards",
   "start_url": "/",
-  "background_color": "#e7e3e4",
-  "theme_color": "#e7e3e4",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "orientation": "portrait",
   "display": "standalone",
   "icons": [
