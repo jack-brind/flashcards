@@ -59,7 +59,6 @@ export const javascriptTips = [
     title: 'Higher order functions',
     summary:
       'Higher order functions accept other functions as arguments (callback functions). They delegate the smaller tasks to the lower level callback functions. This is important for async functions that call a function to do something and wait for that callback function to return something.',
-    snippet: '/snippets/truthy falsy.png',
     highlight: 'Higher order functions are like CEOs that have an assistant',
     category: 'js',
   },
@@ -67,9 +66,8 @@ export const javascriptTips = [
     title: 'Abstraction',
     summary:
       'Abstraction is about hiding the complexity of a system and exposing only the essential parts that you need to work with. It allows you to focus on what a program does rather than how it does it.',
-    snippet: '/snippets/truthy falsy.png',
     highlight: "You don't need to how a car's engine works to drive it",
-    category: 'js',
+    category: 'general',
   },
   {
     title: 'Modulus operator',
