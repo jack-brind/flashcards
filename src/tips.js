@@ -101,4 +101,11 @@ export const javascriptTips = [
     highlight:
       "When using bind, the first argument is what you want 'this' to be set to",
   },
+  {
+    title: 'Closures',
+    summary:
+      'Any function always have access to the variable environment of the execution context in which the function was created. When a function is created, it “remembers” the environment (variables, functions, and objects) in which it was created. Closures created encapsulation, maintaining state and avoiding polluting the global scope',
+    snippet: '/snippets/closure.png',
+    highlight: 'Closures are used a lot in React',
+  },
 ];

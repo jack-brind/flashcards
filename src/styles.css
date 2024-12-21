@@ -337,7 +337,7 @@ body {
 
 h1 {
   font-family: -apple-system, Arial;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   color: var(--color-zinc-800);
   margin: 12px 0px 24px 0px;
@@ -345,12 +345,12 @@ h1 {
 
 p {
   font-family: -apple-system, Arial;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--color-zinc-800);
 }
 
 #summary {
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 24px;
 }
 
@@ -368,44 +368,35 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  padding-top: 16px;
 }
 
 .button-default {
-  margin: 0px auto;
   box-sizing: border-box;
-  height: 40px;
+  height: 44px;
   display: flex;
   gap: 6px;
+  width: 90%;
+  background: var(--color-zinc-100);
+  border: 0px solid var(--color-zinc-100);
+  border-radius: 8px;
+  justify-content: center;
   align-items: center;
   justify-items: center;
-  background: rgb(255, 255, 255, 0.3);
-  border: 1.5px solid rgb(255, 255, 255, 0.4);
-  border-radius: 8px;
-  padding: 0px 16px;
+  margin: 0px 16px;
   box-shadow:
     lch(0 0 0 / 0.02) 0px 4px 4px -1px,
     lch(0 0 0 / 0.06) 0px 1px 1px 0px;
 }
 
-.button-default:hover {
-  background: rgb(255, 255, 255, 0.5);
-}
-
-.button-default:active {
-  outline: 1.5px solid rgb(0, 0, 0, 0.1);
-  border: 0px solid white;
-}
-
-.button-default:hover > .btn-icon {
-  transition: all 0.25s cubic-bezier(0.68, 0, 0.32, 1.6);
-  transform: translate(4px);
+.buton-default:active {
+  background: var(--color-zinc-200);
 }
 
 .btn-icon {
   height: 16px;
-  transition: all 0.25s cubic-bezier(0.68, 0, 0.32, 1.6);
-  transform: translate(0px);
 }
 
 .btn-label {
@@ -421,17 +412,19 @@ img {
   gap: 8px;
   margin-top: 12px;
   justify-items: center;
-  align-items: center;
+  align-items: top;
 }
 
 .highlight-icon {
   color: var(--color-green-600);
-  margin-top: 4px;
+  margin-top: 2px;
   margin-left: 6px;
   animation: bounce2 2s ease infinite;
 }
 
 #highlight-text {
   font-family: 'Inter', Arial;
+  line-height: 1.5;
+  font-size: 14px;
   color: var(--color-zinc-800);
 }
