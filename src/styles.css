@@ -315,11 +315,13 @@
 
 html {
   height: 100vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     var(--color-orange-300),
     var(--color-purple-300)
-  );
+  ); */
+  background: var(--color-zinc-200);
+  scroll-behavior: smooth;
 }
 
 body button {
@@ -356,7 +358,7 @@ p {
 
 .card {
   background: rgb(255, 255, 255, 0.5);
-  padding: 24px 40px;
+  padding: 16px 32px 40px 32px;
   border-radius: 12px;
   margin: 0px auto;
   height: fit-content;
@@ -397,6 +399,11 @@ p {
   height: 16px;
   transition: all 0.25s cubic-bezier(0.68, 0, 0.32, 1.6);
   transform: translate(0px);
+}
+
+emphasis {
+  color: var(--color-red-500);
+  font-style: italic;
 }
 
 .btn-label {

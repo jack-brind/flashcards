@@ -2,6 +2,8 @@
 
 import { javascriptTips } from './tips.js';
 
+console.log(javascriptTips.length);
+
 // DOM references
 const titleElement = document.getElementById('title');
 const summaryElement = document.getElementById('summary');

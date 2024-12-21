@@ -88,8 +88,17 @@ export const javascriptTips = [
   {
     title: 'Truthy & Falsy values',
     summary:
-      'These are values that JavaScript will interpret with defaults. Values are truthy if they return a ???. If the value returned is ',
+      'These values determine how expressions evaluate in boolean contexts. Values are falsy when they return false, 0, an empty string, Null, Undefined or NaN. Values are truthy non-zero numbers, non-empty strings, true, or an object ({} or []).',
     snippet: '/snippets/docbyid.png',
-    highlight: "You don't need to how a car's engine works to drive it",
+    highlight:
+      'The nullish coalescing operator specifically checks for null or undefined, ignoring the other falsy values.',
+  },
+  {
+    title: '.bind() method',
+    summary:
+      "The bind method is used to create a new function with a specific this value (context). This is like borrowing a function that's scope is encapsulated, but switching the context to the current invokation.",
+    snippet: '/snippets/bind.png',
+    highlight:
+      "When using bind, the first argument is what you want 'this' to be set to",
   },
 ];
