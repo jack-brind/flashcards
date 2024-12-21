@@ -15,7 +15,7 @@ export const javascriptTips = [
   {
     title: 'Math rounding',
     summary: 'To round a value, use floor, ceil and round.',
-    snippet: '/snippets/math functions.png',
+    snippet: '/snippets/math.png',
   },
   {
     title: 'OR (||) operator',
