@@ -360,6 +360,7 @@ img {
   background: var(--color-zinc-800);
   border: 1px solid rgb(0, 0, 0, 0.1);
   padding: 4px;
+  margin-bottom: 24px;
   border-radius: 8px;
   max-width: 100%;
   box-shadow: lch(0 0 0 / 0.02) 0px 4px 4px -1px;
@@ -427,9 +428,6 @@ img {
   animation: bounce2 2s ease infinite;
 } */
 
-/* #highlight-text {
-  font-family: 'Inter', Arial;
-  line-height: 1.5;
-  font-size: 14px;
-  color: var(--color-zinc-100);
-} */
+#highlight-text {
+  line-height: 1.6;
+}
