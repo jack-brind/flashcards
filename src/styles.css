@@ -320,7 +320,7 @@ html {
     var(--color-orange-300),
     var(--color-purple-300)
   ); */
-  background: var(--color-zinc-200);
+  background: #e7e3e4;
   scroll-behavior: smooth;
 }
 
