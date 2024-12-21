@@ -66,8 +66,3 @@ nextButton.addEventListener('click', () => {
   const currentTip = randomItem(javascriptTips);
   displayTip(currentTip);
 });
-
-// Falsy values
-const falsyValues = [false, 0, '', null, undefined, NaN];
-// Truthy values
-const truthyValues = [true, 1, 'hello', [], {}, '0', 'false'];
