@@ -16,49 +16,49 @@ export const javascriptTips = [
     title: 'Math rounding',
     summary: 'To round a value, use floor, ceil and round.',
     snippet: '/snippets/math functions.png',
-    highlight: "There's a lot more that can be done here",
   },
   {
-    title: 'Or operator',
-    summary: 'Use || to or stuff',
-    snippet: '/snippets/nullish.png',
-    highlight: 'This is some random highlight3',
+    title: 'OR (||) operator',
+    summary:
+      'The OR (||) operator evaluates expressions from left to right and returns the first “truthy” value it encounters. If all values are “falsy” (e.g., false, 0, "", null, undefined, or NaN), it returns the last value',
+    snippet: '/snippets/or.png',
   },
   {
     title: 'Parameters',
-    summary: 'Used for passing stuff to functions',
-    snippet: '/snippets/nulllish-operator1.png',
-    highlight: 'This is some random highlight2',
+    summary:
+      'Parameters are placeholders defined in a function declaration to accept input values when the function is called. They act as variables inside the function, allowing you to pass data into it for processing. When the function is called, the values you pass are assigned to these parameters. Default parameters allow you to set a default value for a function’s parameter, which is used if no argument is provided or if the argument is undefined.',
+    snippet: '/snippets/parameters.png',
+    highlight:
+      'When passing data when the function is invoked, these are known as arguments',
   },
   {
-    title: 'For of loop',
-    summary: 'Used to loop arrays',
-    snippet: '/snippets/nulllish-operator1.png',
+    title: 'for...of loop',
+    summary:
+      'The for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, or other iterables. It retrieves the values of the iterable in order, making it simpler to work with the contents directly compared to other loop types.',
+    snippet: '/snippets/for of.png',
+    highlight:
+      'Unlike for...in, which works with object keys, for...of focuses solely on the values.',
   },
-  {
-    title: 'Getting a DOM reference',
-    summary: 'This is the summary',
-    snippet: '/snippets/docbyid.png',
-    highlight: 'This is some random highlight',
-  },
+  // {
+  //   title: 'for...in loop',
+  //   summary:
+  //     'The for...in loop iterates over the keys (or property names) of an object or the indices of an array. It’s commonly used to access all properties of an object but should be avoided for arrays if you only want the values, as it may include inherited properties. For arrays, for...in is less common because it retrieves the indices, not the values directly.',
+  //   snippet: '/snippets/nulllish-operator1.png',
+  //   highlight:
+  //     'Unlike for...in, which works with object keys, for...of focuses solely on the values.',
+  // },
   {
     title: 'Higher order functions',
     summary:
       'Higher order functions accept other functions as arguments (callback functions). They delegate the smaller tasks to the lower level callback functions. This is important for async functions that call a function to do something and wait for that callback function to return something.',
-    snippet: '/snippets/docbyid.png',
+    snippet: '/snippets/truthy falsy.png',
     highlight: 'Higher order functions are like CEOs that have an assistant',
   },
   {
     title: 'Abstraction',
     summary:
       'Abstraction is about hiding the complexity of a system and exposing only the essential parts that you need to work with. It allows you to focus on what a program does rather than how it does it.',
-    snippet: '/snippets/docbyid.png',
-    highlight: "You don't need to how a car's engine works to drive it",
-  },
-  {
-    title: 'textContent',
-    summary: 'When manipulating some text in the DOM, use element.textContent',
-    snippet: '/snippets/docbyid.png',
+    snippet: '/snippets/truthy falsy.png',
     highlight: "You don't need to how a car's engine works to drive it",
   },
   {
@@ -68,28 +68,10 @@ export const javascriptTips = [
     snippet: '/snippets/modulus.png',
   },
   {
-    title: '=, ==, ===',
-    summary: 'When manipulating some text in the DOM, use element.textContent',
-    snippet: '/snippets/docbyid.png',
-    highlight: "You don't need to how a car's engine works to drive it",
-  },
-  {
-    title: 'Array methods',
-    summary: 'When manipulating some text in the DOM, use element.textContent',
-    snippet: '/snippets/docbyid.png',
-    highlight: "You don't need to how a car's engine works to drive it",
-  },
-  {
-    title: 'String methods',
-    summary: 'When manipulating some text in the DOM, use element.textContent',
-    snippet: '/snippets/docbyid.png',
-    highlight: "You don't need to how a car's engine works to drive it",
-  },
-  {
     title: 'Truthy & Falsy values',
     summary:
       'These values determine how expressions evaluate in boolean contexts. Values are falsy when they return false, 0, an empty string, Null, Undefined or NaN. Values are truthy non-zero numbers, non-empty strings, true, or an object ({} or []).',
-    snippet: '/snippets/docbyid.png',
+    snippet: '/snippets/truthy falsy.png',
     highlight:
       'The nullish coalescing operator specifically checks for null or undefined, ignoring the other falsy values.',
   },
@@ -104,8 +86,9 @@ export const javascriptTips = [
   {
     title: 'Closures',
     summary:
-      'Any function always have access to the variable environment of the execution context in which the function was created. When a function is created, it “remembers” the environment (variables, functions, and objects) in which it was created. Closures created encapsulation, maintaining state and avoiding polluting the global scope',
+      'Any function always have access to the variable environment of the execution context in which the function was created. When a function is created, it “remembers” the environment (variables, functions, and objects) in which it was created. Closures created encapsulation, maintaining state and avoiding polluting the global scope - Even though the outer function is done executing, the inner function still “keeps hold of” (or closes over) the variables it needs.',
     snippet: '/snippets/closure.png',
-    highlight: 'Closures are used a lot in React',
+    highlight:
+      'A closure is like a backpack that a function carries around wherever it goes. This backpack has all the variables that were present in the environment where the function was created.',
   },
 ];

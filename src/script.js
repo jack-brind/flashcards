@@ -2,7 +2,7 @@
 
 import { javascriptTips } from './tips.js';
 
-console.log(javascriptTips.length);
+console.log(`${javascriptTips.length} tips`);
 
 // DOM references
 const titleElement = document.getElementById('title');
