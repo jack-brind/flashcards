@@ -9,3 +9,14 @@ export const javascriptTips = [
     category: 'js',
   },
 ];
+
+const weatherData = [
+  { location: 'Tenterden', temperature: 25 },
+  { location: 'Tunbridge Wells', temperature: null }, // Missing data
+  { location: 'Herne Bay' }, // No data
+];
+
+for (const temp of weatherData) {
+  console.log(`Location: ${this.location}`);
+  console.log(`Temperature: ${this.current?.temperature ?? 'No data'}°C`);
+}
