@@ -3,41 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="./src/styles.css" />
     <link rel="manifest" href="/manifest.json" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
     <title>Learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/flash-card.png" />
   </head>
   <body>
-    <div class="content">
-      <h1 id="title"></h1>
-      <p id="summary"></p>
-      <image id="snippet" />
-      <div id="highlight">
-        <span class="highlight-icon" style="display: none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-chevrons-right"
-          >
-            <polyline points="13 17 18 12 13 7"></polyline>
-            <polyline points="6 17 11 12 6 7"></polyline>
-          </svg>
-        </span>
-        <p id="highlight-text"></p>
-      </div>
+    <!-- <div class="header">
+      <radio-group>
+        <radio-button id="html" name="radio" value="html" checked
+          >JavaScript</radio-button
+        >
+      </radio-group>
+    </div> -->
+    <div id="tip-container" class="content">
+      <p>Loading...</p>
     </div>
-
     <div class="button-container">
       <button id="refresh" class="button-default">
         <div class="btn-label">Next tip</div>

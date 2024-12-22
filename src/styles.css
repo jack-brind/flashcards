@@ -336,6 +336,18 @@ body {
   margin-bottom: 108px;
 }
 
+code {
+  font-family: 'Monaspace', monospace;
+  font-size: 12px;
+  color: var(--color-zinc-100);
+  background: var(--color-zinc-700);
+  padding: 4px 6px 2px 6px;
+  border-radius: 4px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
 h1 {
   font-family: -apple-system, Arial;
   font-size: 28px;
@@ -349,21 +361,17 @@ p {
   font-family: -apple-system, Arial;
   font-size: 15px;
   color: var(--color-zinc-100);
-}
-
-#summary {
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
 img {
   background: var(--color-zinc-800);
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  border: 0px solid rgb(0, 0, 0, 0.1);
   padding: 4px;
-  margin-bottom: 24px;
   border-radius: 8px;
   max-width: 100%;
-  box-shadow: lch(0 0 0 / 0.02) 0px 4px 4px -1px;
+  /* box-shadow: lch(0 0 0 / 0.2) 0px 4px 4px -1px; */
 }
 
 .button-container {
@@ -396,10 +404,6 @@ img {
     lch(0 0 0 / 0.06) 0px 1px 1px 0px;
 }
 
-.buton-default:active {
-  background: var(--color-zinc-200);
-}
-
 .btn-icon {
   height: 16px;
   color: var(--color-zinc-100);
@@ -411,23 +415,4 @@ img {
   font-size: 15px;
   letter-spacing: 0.1px;
   font-weight: 450;
-}
-
-#highlight {
-  display: flex;
-  gap: 8px;
-  margin-top: 12px;
-  justify-items: center;
-  align-items: top;
-}
-
-/* .highlight-icon {
-  color: var(--color-green-400);
-  margin-top: 2px;
-  margin-left: 6px;
-  animation: bounce2 2s ease infinite;
-} */
-
-#highlight-text {
-  line-height: 1.6;
 }
