@@ -1,4 +1,5 @@
 'use-strict';
+
 import { marked } from 'marked';
 
 const nextButton = document.getElementById('refresh');

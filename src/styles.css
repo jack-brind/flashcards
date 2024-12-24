@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Monaspace';
-  font-weight: 200 800; /* For variable font, keep the range */
+  font-weight: 300 800; /* For variable font, keep the range */
   src: url('/fonts/MonaspaceNeonVarVF.woff2') format('woff2');
 }
 
@@ -332,6 +332,7 @@ body {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-width: none;
   padding: 24px;
   margin-bottom: 108px;
 }
@@ -351,10 +352,14 @@ code {
 ul {
   padding: 0;
   margin-left: 16px;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
 }
 
 ul > li {
+  font-family: -apple-system, Arial;
+  font-size: 15px;
+  color: var(--color-zinc-300);
+  line-height: 1.6;
   margin-bottom: 8px;
 }
 
@@ -363,7 +368,7 @@ h1 {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.4;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
   margin: 12px 0px 24px 0px;
 }
 
@@ -372,21 +377,21 @@ h2 {
   font-size: 24px;
   font-weight: 550;
   line-height: 1.4;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
   margin: 28px 0px 12px 0px;
 }
 
 p {
   font-family: -apple-system, Arial;
   font-size: 15px;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
 emphasis {
   font-weight: 500;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
   text-decoration: underline;
 }
 
@@ -431,12 +436,12 @@ img {
 
 .btn-icon {
   height: 16px;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
 }
 
 .btn-label {
   user-select: none;
-  color: var(--color-zinc-100);
+  color: var(--color-zinc-300);
   font-size: 15px;
   letter-spacing: 0.1px;
   font-weight: 450;
