@@ -9,7 +9,8 @@ let lastPath = null;
 
 async function loadTip() {
   const markdownFiles = import.meta.glob('./tips/javascript/*.md', {
-    as: 'raw',
+    query: '?raw',
+    import: 'default',
   });
   const paths = Object.keys(markdownFiles);
 

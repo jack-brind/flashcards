@@ -6,11 +6,4 @@ The condition doesn't have to be a comparison (<code>===</code>, for example), i
 
 ![](/assets/if.png)
 
-You can use:
-
-- <code>&&</code> (AND)
-- <code>||</code> (OR)
-- <code>!</code> (NOT)
-- <code>??</code> (Nullish coalescing)
-- <code>%</code> (Modulus)
-- and more...
+You can use any operator in these conditions.

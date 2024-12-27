@@ -14,7 +14,8 @@ If a variable, function or block of code is declared in the:
 
 Lexical scope (also known as static scope) means that the scope of a variable is determined by where it is declared in the source code, not by where or how it is accessed during runtime.
 
-The scope chain starts in the current scope, and if the variable can't be resolved, the engine looks up to the parent and then global scope. Closures rely on the scope chain to retain variables and nested functions use parent variables via the scope chain.
+The scope chain is basically where every scope has access to all the variables in the outer / parent scope. It starts in the current scope, and if the variable can't be resolved, the engine looks up to the parent and then global scope (variable lookup).
+Closures rely on the scope chain to retain variables and nested functions use parent variables via the scope chain.
 
 ## Hoisting
 

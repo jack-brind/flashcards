@@ -363,6 +363,11 @@ ul > li {
   margin-bottom: 8px;
 }
 
+ul > li:last-child,
+p {
+  margin-bottom: 24px;
+}
+
 h1 {
   font-family: -apple-system, Arial;
   font-size: 28px;
