@@ -1,4 +1,4 @@
-# Spread Operator
+# Spread operator
 
 The spread (<code>...</code>) operator allows you to expand or “spread” an iterable (like an array, string, or object) into individual elements. It can serve the following purposes:
 

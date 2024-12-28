@@ -1,4 +1,4 @@
-# Basic Operators
+# Basic operators
 
 - <code>=</code> - assignment
 - <code>+</code> - add

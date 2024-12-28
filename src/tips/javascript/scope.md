@@ -1,4 +1,4 @@
-# Scope & Hoisting
+# Scope and hoisting
 
 🚨 Add code examples here eventually.
 

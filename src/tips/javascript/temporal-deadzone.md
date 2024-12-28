@@ -1,4 +1,4 @@
-# Temporal Deadzone (TDZ)
+# Temporal deadzone (TDZ)
 
 The TDZ is a period of time during which a variable declared with <code>let</code> or <code>const</code> exists but cannot be accessed. This period starts from the beginning of the scope (block, function, or script) until the variable’s declaration is encountered.
 
