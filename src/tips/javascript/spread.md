@@ -1,6 +1,6 @@
 # Spread operator
 
-The spread (<code>...</code>) operator allows you to unpack or “spread” an iterable (arrays, strings, maps or sets) into individual elements. Objects are not literals but, since ES2018, spread works with objects too.
+The spread (<code>...</code>) operator allows you to unpack or <i>spread</i> arrays, objects, strings, maps or sets.
 
 It can serve the following purposes:
 

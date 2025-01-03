@@ -1,14 +1,12 @@
 # The for loop
 
-The <code>for</code> statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop. The syntax is:
-
-![](/assets/for-syntax.png)
+The <code>for</code> loop is typically used to loop through arrays or collections where the range is known. It will execute the loops if the condition is true. The condition is checked <emphasis>before</code> each iteration of the loop.
 
 A typical for loop looks like this:
 
 ![](/assets/for.png)
 
-<code>i</code> is traditionally used for counters. <code>x</code> or <code>n</code> are also used.
+<code>i</code> is traditionally used for counters, but this can be anything.
 
 Tips:
 
@@ -17,7 +15,7 @@ Tips:
 - Use let for a counter as the variable will be updated by the loop.
 - You can use complex logic for the conditions such as <code>&&</code> or <code>%</code>, or a ternary, for example.
 - Loops don't always have to incremement / decrement by 1; You can increment by 2, for example (<code>i += 2</code>).
-- When ommitting a conditional, the condition always evaluates to true.
+- When ommitting a conditional (middle part), the condition always evaluates to true.
 - Initialise the counter variable inside the loop to create a closure.
 
 ## Looping arrays
