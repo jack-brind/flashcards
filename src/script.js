@@ -4,6 +4,8 @@ import { marked } from 'marked';
 
 const nextButton = document.getElementById('refresh');
 const tipSelector = document.getElementById('tip-selector');
+const tipPanel = document.getElementById('header');
+const documentBody = document.querySelector('body');
 
 // Track last tip shown
 let lastPath = null;
@@ -57,3 +59,19 @@ tipSelector.addEventListener('change', loadTip);
 nextButton.addEventListener('click', loadTip);
 
 loadTip();
+
+let panelOpen = false;
+
+documentBody.addEventListener('click', function () {
+  if (!panelOpen) {
+    // Open the panel
+    tipPanel.style.height = '100px';
+    tipSelector.style.opacity = '1';
+    panelOpen = true;
+  } else {
+    // Close the panel
+    tipPanel.style.height = '0px';
+    tipSelector.style.opacity = '0';
+    panelOpen = false;
+  }
+});
