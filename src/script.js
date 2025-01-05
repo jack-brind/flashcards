@@ -22,6 +22,11 @@ async function loadTip() {
       query: '?raw',
       import: 'default',
     });
+  } else if (selectedCategory === 'react') {
+    markdownFiles = import.meta.glob('./tips/react/*.md', {
+      query: '?raw',
+      import: 'default',
+    });
   } else {
     console.error('Invalid category selected');
     return;
