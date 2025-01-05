@@ -14,13 +14,22 @@
     <link rel="icon" type="image/x-icon" href="/flash-card.png" />
   </head>
   <body>
-    <!-- <div class="header">
-      <radio-group>
-        <radio-button id="html" name="radio" value="html" checked
+    <div class="header">
+      <select name="type" id="tip-selector">
+        <option value="javascript">JavaScript</option>
+        <option value="general">General</option>
+      </select>
+    </div>
+    <div class="header1">
+      <radio-group style="background-color: lightblue">
+        <radio-button id="html" name="radio" value="javascript" checked
           >JavaScript</radio-button
         >
+        <radio-button id="html" name="radio" value="general"
+          >General</radio-button
+        >
       </radio-group>
-    </div> -->
+    </div>
     <div id="tip-container" class="content">
       <p>Loading...</p>
     </div>

@@ -460,3 +460,14 @@ img {
   letter-spacing: 0.1px;
   font-weight: 450;
 }
+
+#tip-selector {
+  margin: 16px;
+  height: 44px;
+  display: flex;
+  padding: 0px 24px;
+  font-size: 15px;
+  font-family: -apple-system, Arial;
+  border: 1px solid var(--color-zinc-700);
+  border-radius: 8px;
+}

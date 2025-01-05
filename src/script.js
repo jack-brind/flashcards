@@ -3,15 +3,29 @@
 import { marked } from 'marked';
 
 const nextButton = document.getElementById('refresh');
+const tipSelector = document.getElementById('tip-selector');
 
 // Track last tip shown
 let lastPath = null;
 
 async function loadTip() {
-  const markdownFiles = import.meta.glob('./tips/javascript/*.md', {
-    query: '?raw',
-    import: 'default',
-  });
+  const selectedCategory = tipSelector.value;
+  let markdownFiles;
+
+  if (selectedCategory === 'javascript') {
+    markdownFiles = import.meta.glob('./tips/javascript/*.md', {
+      query: '?raw',
+      import: 'default',
+    });
+  } else if (selectedCategory === 'general') {
+    markdownFiles = import.meta.glob('./tips/general/*.md', {
+      query: '?raw',
+      import: 'default',
+    });
+  } else {
+    console.error('Invalid category selected');
+    return;
+  }
   const paths = Object.keys(markdownFiles);
 
   let randomPath;
@@ -32,9 +46,9 @@ async function loadTip() {
   }
 }
 
-loadTip();
+tipSelector.addEventListener('change', loadTip);
 
 // Button to get a new tip
-nextButton.addEventListener('click', () => {
-  loadTip();
-});
+nextButton.addEventListener('click', loadTip);
+
+loadTip();
