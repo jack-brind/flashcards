@@ -69,10 +69,6 @@ categoryRadios.forEach(radio => {
     if (event.target.checked) {
       currentCategory = event.target.value;
       loadTip();
-
-      // Close the panel
-      tipPanel.style.marginTop = '-100px';
-      panelOpen = false;
     }
   });
 });
@@ -82,9 +78,6 @@ nextButton.addEventListener('click', loadTip);
 
 // Initial load
 loadTip();
-
-// Set initial state to closed
-// tipPanel.style.marginTop = '-100px';
 
 tipBody.addEventListener('click', function () {
   if (!panelOpen) {
