@@ -102,12 +102,3 @@ tipBody.addEventListener('click', function () {
     panelOpen = false;
   }
 });
-
-function smoothieMaker(apples, bananas, oranges) {
-  const smoothie = `Smoothie containing ${apples} apples, ${bananas} bananas and ${oranges} oranges`;
-  const totalFruits = apples + bananas + oranges;
-  return smoothie, totalFruits;
-}
-
-const niceSmoothie = smoothieMaker(2, 5, 4);
-console.log(niceSmoothie);
