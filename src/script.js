@@ -3,37 +3,47 @@
 import { marked } from 'marked';
 
 const nextButton = document.getElementById('refresh');
-const tipSelector = document.getElementById('tip-selector');
-const tipPanel = document.getElementById('header');
-const documentBody = document.querySelector('body');
+const tipPanel = document.getElementById('category-container');
+const tipBody = document.getElementById('tip-container');
+
+// Get all radio inputs
+const categoryRadios = document.querySelectorAll('input[name="category"]');
 
 // Track last tip shown
 let lastPath = null;
+let currentCategory = 'JavaScript'; // Default category
+
+// Define static glob patterns
+const markdownPaths = {
+  javascript: import.meta.glob('./tips/javascript/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
+  css: import.meta.glob('./tips/css/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
+  general: import.meta.glob('./tips/general/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
+};
 
 async function loadTip() {
-  const selectedCategory = tipSelector.value;
-  let markdownFiles;
+  const category = currentCategory.toLowerCase();
+  const markdownFiles = markdownPaths[category];
 
-  if (selectedCategory === 'javascript') {
-    markdownFiles = import.meta.glob('./tips/javascript/*.md', {
-      query: '?raw',
-      import: 'default',
-    });
-  } else if (selectedCategory === 'general') {
-    markdownFiles = import.meta.glob('./tips/general/*.md', {
-      query: '?raw',
-      import: 'default',
-    });
-  } else if (selectedCategory === 'react') {
-    markdownFiles = import.meta.glob('./tips/react/*.md', {
-      query: '?raw',
-      import: 'default',
-    });
-  } else {
-    console.error('Invalid category selected');
+  if (!markdownFiles) {
+    tipBody.innerHTML = `<p>No tips available for ${currentCategory} yet!</p>`;
     return;
   }
+
   const paths = Object.keys(markdownFiles);
+
+  if (paths.length === 0) {
+    tipBody.innerHTML = `<p>No tips available for ${currentCategory} yet!</p>`;
+    return;
+  }
 
   let randomPath;
   do {
@@ -45,33 +55,43 @@ async function loadTip() {
   try {
     const content = await markdownFiles[randomPath]();
     const html = marked(content);
-    document.getElementById('tip-container').innerHTML = html;
+    tipBody.innerHTML = html;
   } catch (error) {
     console.error('Error loading tip:', error);
-    document.getElementById('tip-container').innerHTML =
-      `<p>Failed to load the tip. Please try again later.</p>`;
+    tipBody.innerHTML = `<p>Failed to load the tip. Please try again later.</p>`;
   }
 }
 
-tipSelector.addEventListener('change', loadTip);
+// Handle radio button changes
+categoryRadios.forEach(radio => {
+  radio.addEventListener('change', event => {
+    if (event.target.checked) {
+      currentCategory = event.target.value;
+      loadTip();
+
+      // Close the panel
+      tipPanel.style.marginTop = '0px';
+      panelOpen = false;
+    }
+  });
+});
 
 // Button to get a new tip
 nextButton.addEventListener('click', loadTip);
 
+// Initial load
 loadTip();
 
 let panelOpen = false;
 
-documentBody.addEventListener('click', function () {
+tipBody.addEventListener('click', function () {
   if (!panelOpen) {
     // Open the panel
-    tipPanel.style.height = '100px';
-    tipSelector.style.opacity = '1';
+    tipPanel.style.marginTop = '-100px';
     panelOpen = true;
   } else {
     // Close the panel
-    tipPanel.style.height = '0px';
-    tipSelector.style.opacity = '0';
+    tipPanel.style.marginTop = '0px';
     panelOpen = false;
   }
 });

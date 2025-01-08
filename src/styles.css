@@ -326,6 +326,7 @@ body {
   flex-direction: column;
   height: 100vh;
   background: #18191b;
+  overflow: hidden;
 }
 
 .content {
@@ -415,7 +416,6 @@ img {
   padding: 4px;
   border-radius: 8px;
   max-width: 100%;
-  /* box-shadow: lch(0 0 0 / 0.2) 0px 4px 4px -1px; */
 }
 
 .button-container {
@@ -461,25 +461,60 @@ img {
   font-weight: 450;
 }
 
-#tip-selector {
-  margin: 0px 16px 0px 16px;
-  height: 44px;
+/* Category collapsible section */
+#category-container {
+  margin: 0px;
   display: flex;
-  padding: 0px 24px;
-  font-size: 15px;
-  font-family: -apple-system, Arial;
-  border: 1px solid var(--color-zinc-700);
-  border-radius: 8px;
-  opacity: 0;
-  transition: 0.2s;
-  isolation: isolate;
+  flex-direction: row;
+  gap: 16px;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  transition: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--color-zinc-950);
 }
 
-#header {
+.radio-button-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 16px;
   align-items: center;
-  height: 0px;
-  transition: height 0.2s;
-  background: var(--color-zinc-950);
+  overflow-x: scroll;
+  scrollbar-width: none;
+  padding: 0px 20px;
+  width: 100%;
+  padding: 8px 24px;
+}
+
+/* Pill container */
+.radio-container {
+  align-items: center;
+  border: 1px solid var(--color-zinc-500);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  height: 44px;
+  padding: 0px 16px;
+  background: var(--color-zinc-800);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Radio button label */
+.label-text {
+  font-size: 15px;
+  font-family: -apple-system, Arial;
+  color: var(--color-zinc-300);
+  margin: 0;
+}
+
+/* Hide the radio bullet */
+.radio {
+  display: none;
+}
+
+/* Style the container when the radio is checked */
+.radio-container:has(input:checked) {
+  background: var(--color-zinc-700);
 }
