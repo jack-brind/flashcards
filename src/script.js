@@ -8,6 +8,7 @@ const tipBody = document.getElementById('tip-container');
 
 // Get all radio inputs
 const categoryRadios = document.querySelectorAll('input[name="category"]');
+let panelOpen = false;
 
 // Track last tip shown
 let lastPath = null;
@@ -70,7 +71,7 @@ categoryRadios.forEach(radio => {
       loadTip();
 
       // Close the panel
-      tipPanel.style.marginTop = '0px';
+      tipPanel.style.marginTop = '-100px';
       panelOpen = false;
     }
   });
@@ -82,16 +83,17 @@ nextButton.addEventListener('click', loadTip);
 // Initial load
 loadTip();
 
-let panelOpen = false;
+// Set initial state to closed
+// tipPanel.style.marginTop = '-100px';
 
 tipBody.addEventListener('click', function () {
   if (!panelOpen) {
     // Open the panel
-    tipPanel.style.marginTop = '-100px';
+    tipPanel.style.marginTop = '0px';
     panelOpen = true;
   } else {
     // Close the panel
-    tipPanel.style.marginTop = '0px';
+    tipPanel.style.marginTop = '-100px';
     panelOpen = false;
   }
 });
