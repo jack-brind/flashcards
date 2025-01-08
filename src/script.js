@@ -28,6 +28,18 @@ const markdownPaths = {
     query: '?raw',
     import: 'default',
   }),
+  html: import.meta.glob('./tips/html/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
+  react: import.meta.glob('./tips/react/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
+  tailwind: import.meta.glob('./tips/tailwind/*.md', {
+    query: '?raw',
+    import: 'default',
+  }),
 };
 
 async function loadTip() {

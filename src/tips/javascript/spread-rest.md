@@ -1,6 +1,8 @@
-# Spread operator
+# Spread & Rest operators
 
-The spread (<code>...</code>) operator allows you to unpack or <i>spread</i> arrays, objects, strings, maps or sets.
+Both of these operators use the same <code>...</code> syntax but have different usages.
+
+The spread operator allows you to unpack or <i>spread</i> arrays, objects, strings, maps or sets.
 
 It can serve the following purposes:
 
