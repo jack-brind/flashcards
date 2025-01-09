@@ -103,3 +103,22 @@ tipBody.addEventListener('click', function () {
     panelOpen = false;
   }
 });
+
+const friends = [
+  { name: 'Jack', isParent: true },
+  { name: 'Glen', isParent: false },
+  { name: 'Jerric', isParent: false },
+  { name: 'Jason', isParent: true },
+  { name: 'Josh', isParent: true },
+  { name: 'Tom', isParent: true },
+  { name: 'Alex', isParent: false },
+  { name: 'Fraser', isParent: false },
+];
+
+friends.forEach(friend => {
+  if (friend.isParent === true) {
+    console.log(`✅ ${friend.name} is a parent`);
+  } else {
+    console.log(`❌ ${friend.name} is not a parent`);
+  }
+});
