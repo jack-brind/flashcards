@@ -10,6 +10,8 @@ If a variable, function or block of code is declared in the:
 - Function scope: Its lexical scope is the function where it is declared.
 - Block scope: Its lexical scope is the block {...} where it is declared.
 
+All data inside of a scope is private and encapsulated.
+
 ## Lexical scope
 
 Lexical scope (also known as static scope) means that the scope of a variable is determined by where it is declared in the source code, not by where or how it is accessed during runtime.
