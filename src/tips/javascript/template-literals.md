@@ -6,7 +6,7 @@ When working with strings, template literals allow you to more easily build stri
 
 Template literals can be really powerful as you can also use expressions inside them to determine the result such as ternaries and calculations.
 
-![](/assets/template-literals.png)
+![](/assets/literal-expression.png)
 
 There is so much more that you can do with them such as:
 
