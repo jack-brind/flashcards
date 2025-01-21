@@ -109,3 +109,8 @@ Object.keys(markdownPaths).forEach(category => {
   const files = Object.keys(markdownPaths[category]);
   console.log(`${files.length} ${category} tips`);
 });
+
+let a = 10;
+console.log(`a = ${a}`);
+console.log(`a++ = ${a++}`);
+console.log(`a = ${a}`);
