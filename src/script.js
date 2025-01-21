@@ -60,7 +60,7 @@ async function loadTip() {
 
   let randomPath;
   do {
-    //randomPath = paths[7];
+    //randomPath = paths[3];
     randomPath = paths[Math.floor(Math.random() * paths.length)];
   } while (randomPath === lastPath && paths.length > 1);
 
@@ -102,4 +102,10 @@ tipBody.addEventListener('click', function () {
     tipPanel.style.marginTop = '-100px';
     panelOpen = false;
   }
+});
+
+// Tip counts
+Object.keys(markdownPaths).forEach(category => {
+  const files = Object.keys(markdownPaths[category]);
+  console.log(`${files.length} ${category} tips`);
 });

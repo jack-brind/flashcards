@@ -317,6 +317,9 @@
 
   --color-black: #000;
   --color-white: #fff;
+
+  font-feature-settings: 'calt' 1;
+  font-variant-ligatures: contextual;
 }
 
 body {

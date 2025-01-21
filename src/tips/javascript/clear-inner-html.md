@@ -1,4 +1,4 @@
-# Clearing InnerHTML
+# Clearing innerHTML
 
 <code>element.innerHTML = '';</code> is used to clear out any existing HTML container.
 

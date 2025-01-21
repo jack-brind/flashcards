@@ -1,4 +1,4 @@
-# The forEach method
+# The forEach() method
 
 The <code>forEach()</code> method is available on arrays and this is an alternative to the <code>for...of</code> loop. Although <code>forEach()</code> acts like a loop, it is actually not and so you can't break out of it - it will process all elements of the array.
 
