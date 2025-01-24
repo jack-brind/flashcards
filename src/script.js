@@ -110,7 +110,4 @@ Object.keys(markdownPaths).forEach(category => {
   console.log(`${files.length} ${category} tips`);
 });
 
-let a = 10;
-console.log(`a = ${a}`);
-console.log(`a++ = ${a++}`);
-console.log(`a = ${a}`);
+// PRACTICE AREA

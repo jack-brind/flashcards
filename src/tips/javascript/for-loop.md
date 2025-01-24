@@ -12,7 +12,7 @@ Tips:
 
 - For loop keeps running while condition is true.
 - When using a for loop with an array, start the counter at 0.
-- Use let for a counter as the variable will be updated by the loop.
+- Use <code>let</code> for a counter as the variable will be updated by the loop.
 - You can use complex logic for the conditions such as <code>&&</code> or <code>%</code>, or a ternary, for example.
 - Loops don't always have to incremement / decrement by 1; You can increment by 2, for example (<code>i += 2</code>).
 - When ommitting a conditional (middle part), the condition always evaluates to true.
