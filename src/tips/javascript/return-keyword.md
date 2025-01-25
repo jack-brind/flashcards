@@ -2,7 +2,7 @@
 
 The <code>return</code> keyword is used exclusively inside functions. It ends a function's execution and specifies a value to be returned to the code that called the function.
 
-Without the <code>return</code> keyword, a function will return <code>Undefined</code> by default.
+Without the <code>return</code> keyword, a function will return <code>undefined</code> by default.
 
 You can return any type of value - a primitive, object, array or even other functions.
 

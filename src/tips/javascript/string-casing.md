@@ -1,6 +1,6 @@
 # String casing
 
-The <code>.toUpperCase()</code> and <code>.toLowerCase()</code> methods will convert all alphabetic characters in a string to upper or lower case.
+The <code>toUpperCase()</code> and <code>toLowerCase()</code> methods will convert all alphabetic characters in a string to upper or lower case.
 
 ![](/assets/string-case.png)
 

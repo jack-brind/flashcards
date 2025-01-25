@@ -1,6 +1,6 @@
-# String .split()
+# String split()
 
-The <code>.split()</code> method on strings separates a string into multiple items in an array. This method mainly takes a separator argument which specifies where the string should split. This is typically and space <code>.split(' ')</code> or comma <code>.split(',')</code>.
+The <code>split()</code> method on strings separates a string into multiple items in an array. This method mainly takes a separator argument which specifies where the string should split. This is typically and space <code>split(' ')</code> or comma <code>split(',')</code>.
 
 This can be useful for:
 

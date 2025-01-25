@@ -1,6 +1,6 @@
 # The for loop
 
-The <code>for</code> loop is typically used to loop through arrays or collections where the range is known. It will execute the loops if the condition is true. The condition is checked <emphasis>before</code> each iteration of the loop.
+The for loop is typically used to loop through arrays or collections where the range is known. It will execute the loops if the condition is true. The condition is checked <emphasis>before</emphasis> each iteration of the loop.
 
 A typical for loop looks like this:
 

@@ -17,6 +17,6 @@ There are also a few behavioural differences from regular functions:
 
 ## Lexical this
 
-In regular functions, the value of <code>this</code> depends on how the function is called, not where it’s defined and so they don’t automatically know their context and it set dynamically by the caller. By contrast, arrow functions solve the problem by inheriting the <code>this</code> from their lexical scope (the place where they were defined) so you can't use <code>.bind()</code> on them, for example.
+In regular functions, the value of <code>this</code> depends on how the function is called, not where it’s defined and so they don’t automatically know their context and it set dynamically by the caller. By contrast, arrow functions solve the problem by inheriting the <code>this</code> from their lexical scope (the place where they were defined) so you can't use <code>bind()</code> on them, for example.
 
 ![](/assets/arrow.png)

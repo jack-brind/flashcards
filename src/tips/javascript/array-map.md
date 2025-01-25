@@ -1,6 +1,6 @@
-# Array .map()
+# Array map()
 
-The <code>.map()</code> method is used to transform a given array and create a new array (which is a shallow copy) of the results. It is ideal for tasks like formatting, calculations, or extracting properties from objects.
+The <code>map()</code> method is used to transform a given array and create a new array (which is a shallow copy) of the results. It is ideal for tasks like formatting, calculations, or extracting properties from objects.
 
 Example usages are:
 

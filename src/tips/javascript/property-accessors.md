@@ -14,6 +14,6 @@ When accessing properties using the dot notation, property names must be static 
 
 Unlike the dot notation, the bracket notation can be dynamic and can be accessed using variables or strings as the property name. When working with data from an API, property names from JSON might be required to be more descriptive and use property names like <i>"full name"</i>, <i>"current temperature"</i> or where the property is a year such as <i>2025</i>, for example.
 
-In these cases, you can access the properties using the bracket notation (<code>console.log(person["full name"]);</code>). You can also store these as variables and then use the variable.
+In these cases, you can access the properties using the bracket notation (<code>person["full name"]</code>). You can also store these as variables and then use the variable.
 
 ![](/assets/bracket-notation.png)

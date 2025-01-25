@@ -10,6 +10,6 @@ The method takes a max of 3 arguments:
 
 It can be used to iterate through arrays of DOM elements or data to update the UI.
 
-It does not return a value, only <code>Undefined</code>.
+It does not return a value, only <code>undefined</code>.
 
 ![](/assets/for-each.png)
