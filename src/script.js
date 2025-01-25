@@ -60,7 +60,7 @@ async function loadTip() {
 
   let randomPath;
   do {
-    //randomPath = paths[3];
+    //randomPath = paths[7];
     randomPath = paths[Math.floor(Math.random() * paths.length)];
   } while (randomPath === lastPath && paths.length > 1);
 

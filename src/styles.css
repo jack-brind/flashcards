@@ -351,6 +351,7 @@ code {
   height: 20px;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 ul {
@@ -411,6 +412,10 @@ emphasis {
   font-weight: 500;
   color: var(--color-zinc-300);
   text-decoration: underline;
+}
+
+bold {
+  font-weight: 600;
 }
 
 img {
