@@ -6,4 +6,5 @@ The <i>start</i> argument allows you to specify where the slice starts and this 
 
 These arguments can also be negative which will slice from the end. So <code>slice(-2)</code> will take the last 2 items of an arry or characters of a string.
 
+IMAGE BELOW NOT WORKING (TO DO)
 ![](/assets/slice.png)
