@@ -60,7 +60,7 @@ async function loadTip() {
 
   let randomPath;
   do {
-    //randomPath = paths[18];
+    //randomPath = paths[24];
     randomPath = paths[Math.floor(Math.random() * paths.length)];
   } while (randomPath === lastPath && paths.length > 1);
 
@@ -71,7 +71,6 @@ async function loadTip() {
     const html = marked(content);
     tipBody.innerHTML = html;
   } catch (error) {
-    console.error('Error loading tip:', error);
     tipBody.innerHTML = `<p>Failed to load the tip. Please try again later.</p>`;
   }
 }
@@ -109,44 +108,3 @@ Object.keys(markdownPaths).forEach(category => {
   const files = Object.keys(markdownPaths[category]);
   console.log(`${files.length} ${category} tips`);
 });
-
-// PRACTICE AREA
-
-const lastCvDate = new Date('21 November 2024');
-
-const displayLastCvDate = date => {
-  const monthName = date.toLocaleString('default', { month: 'short' });
-  console.log(`${monthName.toUpperCase()} ${date.getFullYear()}`);
-};
-
-displayLastCvDate(lastCvDate);
-
-const lastContact = new Date('9 Dec 2024');
-const now = new Date();
-
-const daysAgo = date => {
-  const now = new Date();
-  const numDays = now - date;
-  const diff = numDays / (1000 * 60 * 60 * 24);
-  return `${Math.floor(diff)} days ago`;
-};
-
-console.log(daysAgo(lastContact));
-
-const nextEvent = dateStr => {
-  const now = new Date();
-  const event = new Date(dateStr);
-  const numDays = event - now;
-  const diffDays = numDays / (1000 * 60 * 60 * 24);
-  return `Next event in ${Math.floor(diffDays)} days`;
-};
-
-console.log(nextEvent('21 April 2025'));
-
-const current = new Date();
-const day = `${now.getDate()}`.padStart(2, 0);
-const month = `${now.getMonth() + 1}`.padStart(2, 0);
-const year = now.getFullYear();
-const hour = `${now.getHours()}`.padStart(2, '0');
-const minutes = `${now.getMinutes()}`.padStart(2, '0');
-console.log(`${day}/${month}/${year}, ${hour}:${minutes}`);
