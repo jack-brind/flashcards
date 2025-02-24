@@ -2,7 +2,7 @@
 
 Parameters are placeholders defined in a function to accept input values (ingrdients) when the function is called. They act as variables inside the function, allowing you to pass data into it for processing. When the function is called, the values you pass are assigned to these parameters.
 
-You cannot skip parameters - you need to add each argument to match the order of the parameters. If you want to skip a parameter, you can set the argument to 'undefined'. For example, if a function has a, b and c as parameters, you can pass the arguments <code>a, undefined, c</code>.
+You cannot skip parameters - you need to add each argument to match the order of the parameters. If you want to skip a parameter, you can set the argument to 'undefined'. For example, if a function has a, b and c as parameters, you can pass the arguments <code>a, undefined, c</code>. In <i>function definitions</i>, you can use <code>_</code> as a parameter name to indicate that it is intentionally ignored (e.g., <code>function myFunction(a, _, c) {}</code>). However, underscores are just a naming convention and does not allow skipping arguments in <i>function calls</i> (arguments).
 
 Default parameters allow you to set a default value for a function’s parameter, which is used if no argument is provided or if the argument is <code>undefined</code>. You can also use expressions for default parameters.
 

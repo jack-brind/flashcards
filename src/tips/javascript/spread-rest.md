@@ -17,6 +17,8 @@ It can serve the following purposes:
 
 ## Rest
 
-The rest operator does the opposite of the spread operator and collects the rest of the items.
+The rest operator does the opposite of the spread operator and collects the rest of the items into an object or an array. This is particularly useful when destructuring where you want to extract a handful of values from an object or array, but you also still want the rest of the values or elements. You can also use the rest operator as function arguments.
 
-MORE HERE!
+The rest operator must be the last element in any given situation.
+
+![](/assets/rest-destructure.png)

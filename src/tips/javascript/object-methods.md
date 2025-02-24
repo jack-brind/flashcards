@@ -1,6 +1,10 @@
 # Object methods
 
-Object methods are functions stored as properties of an object. These methods are typically used to perform actions related to the object or manipulate its properties.
-Object methods are powerful because they allow you to group data (properties) and behavior (methods) together, which makes it easier to model real-world entities in your code (encapsulation).
+Some of the most useful methods on objects are:
 
-![](/assets/object-method.png)
+- <code>Object.keys()</code> - Returns an array of an object’s property names
+- <code>Object.values()</code> - Returns an array of an object’s values
+- <code>Object.entries()</code> - Returns an array of key-value pairs
+- <code>Object.freeze()</code> - Prevents modifications (adding, deleting, or changing properties)
+- <code>Object.seal()</code> - Prevents adding or deleting properties but allows modifying existing ones
+- <code>Object.hasOwn(obj, key)</code> - Checks if an object has a property without checking the prototype chain
