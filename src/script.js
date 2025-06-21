@@ -12,7 +12,7 @@ let panelOpen = false;
 
 // Track last tip shown
 let lastPath = null;
-let currentCategory = 'JavaScript'; // Default category
+let currentCategory = 'react'; // Default category
 
 // Define static glob patterns
 const markdownPaths = {
