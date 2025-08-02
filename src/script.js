@@ -60,7 +60,7 @@ async function loadTip() {
 
   let randomPath;
   do {
-    //randomPath = paths[19];
+    //randomPath = paths[0];
     randomPath = paths[Math.floor(Math.random() * paths.length)];
   } while (randomPath === lastPath && paths.length > 1);
 
@@ -107,4 +107,10 @@ tipBody.addEventListener('click', function () {
 Object.keys(markdownPaths).forEach(category => {
   const files = Object.keys(markdownPaths[category]);
   console.log(`${files.length} ${category} tips`);
+  if (category === 'javascript') {
+    const tipNames = files.map(file =>
+      file.split('/').pop().replace('.md', ''),
+    );
+    console.log(tipNames);
+  }
 });

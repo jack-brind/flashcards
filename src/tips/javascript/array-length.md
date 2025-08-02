@@ -1,7 +1,6 @@
-# Array.length
+# Array length
 
-The <code>.length</code> property on arrays is used to check the number of items in an array.
-Lengths work on the number of items of an array, not the last index position.
+The <code>length</code> property on arrays is used to check the number of elements in an array.
 
 ### Length check
 
@@ -23,6 +22,6 @@ Checking to make sure the length of an array is valid such as a minimum or maxim
 
 ### Iterating
 
-Using the length of an array to execute a loop for each item in an array, for example.
+Using the length of an array to execute a loop for each item in an array.
 
 ![](/assets/array-iteration.png)

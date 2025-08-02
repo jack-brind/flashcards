@@ -12,13 +12,17 @@ You can still set default values for the props when destructuring e.g. <code>{ i
 
 ## Spreading props
 
+⚠️ Consider moving into separate flashcard.
 If you want to pass all the props to the child, you can simply spread the props using <code>&lt;Child {...props} /&gt;</code>. This will take all of the props in the props object and copy them verbatim to the child component. However, if the parent has multiple children, avoid spreading the props because some children may receive props that are not relevant to them.
-This is useful when you want to act as a "pass-through" component where you pass props through a component that doesn't use them, like a middleman.
+This is useful for prop forwarding when you want to pass props through a wrapper component that doesn't use them, like a middleman.
 In some cases, you might want to receive some props individually from a parent and spread the rest to another child component. This is known as 'selective spreading', where you extract some props for immediate use in the current component, then spread the remaining props to a child component. This pattern is common when you need to process or transform some data before passing the rest along.
 
 ![](/assets/selective-spreading.png)
 
 Spreading props is particularly useful when you're building flexible, reusable components. It automatically adapts when new props are added over time – you don't need to manually update every component in the chain when you add a new prop to the top level.
+It is also useful for readability for other devs – if there are lots of available props, you could highlight the most important ones explicitly and then spread the rest e.g:
+<code>{ name, age, location, ...otherProps }</code> (it's not very common).
+Use spread when it genuinely simplifies your code. Don't be lazy and pass everything every time. 
 
 ## Analogy
 
